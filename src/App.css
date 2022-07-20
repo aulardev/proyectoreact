@@ -1,4 +1,48 @@
-.App {
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+li {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 8vh;
+  background: rgb(0, 48, 126);
+}
+
+.nav__brand {
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  font-weight:lighter;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -39,4 +83,4 @@
 
 button {
   font-size: calc(10px + 2vmin);
-}
+} */
