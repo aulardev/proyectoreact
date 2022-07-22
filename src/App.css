@@ -42,6 +42,32 @@ a{
   gap: 3rem;
 }
 
+.cart-icon {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.9rem;
+  cursor: pointer;
+  
+}
+
+.products-heading {
+  font-size: 3.5rem;
+  color: blue;
+}
+
+.nav__toggler div {
+  width: 3rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: white;
+  cursor: pointer;
+}
+
+.nav__togler {
+  cursor: pointer;
+}
+
+
 /* .App {
   text-align: center;
 }
