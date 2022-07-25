@@ -1,6 +1,20 @@
-*::before {
-  margin: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;500;600&family=Raleway:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+:root {
+   --main-color: #fd4646;
+   --text-color: #171427; 
+   --bg-color: #fff;
   
 }
 
@@ -18,7 +32,7 @@ li {
 
 a{
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
 }
 
 .nav {
@@ -26,13 +40,15 @@ a{
   align-items: center;
   justify-content: space-around;
   height: 8vh;
-  background: rgb(0, 48, 126);
+  background: var(--bg-color)
+ 
+  
 }
 
 .nav__brand {
   font-size: 2.1rem;
-  text-transform: uppercase;
-  font-weight:lighter;
+  color:black;
+  font: weight 600px;
 }
 
 .nav__menu {
@@ -40,9 +56,10 @@ a{
   align-items: center;
   justify-content: space-around;
   gap: 3rem;
+  
 }
 
-.cart-icon {
+ion-icon {
   width: 3rem;
   height: 3rem;
   font-size: 1.9rem;
@@ -51,62 +68,17 @@ a{
 }
 
 .products-heading {
-  font-size: 3.5rem;
-  color: blue;
+  font-size: 8rem;
+  color: black;
 }
 
-.nav__toggler div {
-  width: 3rem;
-  height: 0.2rem;
-  margin: 0.4rem;
-  background: white;
-  cursor: pointer;
-}
-
-.nav__togler {
-  cursor: pointer;
-}
-
-
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.counter {
+  background: var(--main-color);
   color: white;
+  border: none;
+  padding: 4px 9px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-button {
-  font-size: calc(10px + 2vmin);
-} */
