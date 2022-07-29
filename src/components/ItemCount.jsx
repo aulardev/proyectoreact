@@ -13,13 +13,17 @@ export default function ItemCount() {
     }
 
     return (
-       <div>
-       <h2>Jersey Football</h2>
-       <button disabled={numero === 0} onClick={handleDecrement}>-</button>
-       <h3>{numero}</h3>
-       <button disabled={numero === 5} onClick={handleIncrement}>+</button>
+        <div className='container'>
+          <div className='product-box'>
+             <h2>Jersey Football</h2>
 
-       <button className="counter" >Add Cart</button>
+             <button disabled={numero === 0} onClick={handleDecrement}>-</button>
+             <h3>{numero}</h3>
+
+             <button disabled={numero === 5} onClick={handleIncrement}>+</button>
+
+             <button className="counter" >Add Cart</button>
+          </div>
        </div>
   )
 } 

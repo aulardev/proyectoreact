@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;500;600&family=Raleway:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap');
 
+
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -46,9 +47,9 @@ a{
 }
 
 .nav__brand {
-  font-size: 2.1rem;
+  font-size: 3.1rem;
   color:black;
-  font: weight 600px;
+  font-weight: 450;
 }
 
 .nav__menu {
@@ -67,9 +68,19 @@ ion-icon {
   
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .products-heading {
   font-size: 8rem;
+  padding: 80px 20px;
   color: black;
+}
+
+.product-box {
+  position: relative;
 }
 
 .counter {
@@ -80,5 +91,9 @@ ion-icon {
   font-size: 1.5rem;
   font-weight: 500;
   cursor: pointer;
+  display: flex;
+  border: 1px solid;
 }
+
+
 
