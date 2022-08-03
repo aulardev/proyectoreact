@@ -27,10 +27,6 @@ body {
   font-size: 1.6rem;
 }
 
-li {
-  list-style: none;
-}
-
 a{
   text-decoration: none;
   color: var(--text-color);
@@ -69,18 +65,17 @@ ion-icon {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
+    display: grid;
+    columns: 5px;
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
 }
 
 .products-heading {
   font-size: 8rem;
   padding: 80px 20px;
   color: black;
-}
-
-.product-box {
-  position: relative;
 }
 
 .counter {
@@ -91,9 +86,29 @@ ion-icon {
   font-size: 1.5rem;
   font-weight: 500;
   cursor: pointer;
-  display: flex;
   border: 1px solid;
 }
+
+.counter-box {
+  width: 40px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.item-product {
+  margin: 30px auto;
+  width: 80%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  
+}
+
 
 
 

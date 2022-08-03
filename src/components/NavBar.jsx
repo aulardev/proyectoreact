@@ -1,17 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+export default function NavBar () {
 
 
-
-const NavBar = () => {
   return (
     <div>
       <nav className="nav">
-        <a href="#" className="nav__brand">Football Shop</a>
+        <a href="#" className="nav__brand">Ecommerce Tech Shop</a>
         <ul className="nav__menu">
-          <li className="nav__item"><a href="#" className="nav__link">Home</a></li>
-          <li className="nav__item"><a href="#" className="nav__link">About us</a></li>
-          <li className="nav__item"><a href="#" className="nav__link">Shop</a></li>
-          
+          <Link to={'/'} >Home</Link>
+          <Link to="/category/gamer">Gamer</Link>
+          <Link to="/category/computacion">Computación</Link>
           
         </ul>
         <div>
@@ -24,4 +23,3 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
