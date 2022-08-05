@@ -1,0 +1,56 @@
+[
+    { "id": 1, 
+      "type": "gamer",
+      "image": "../../src/assets/img1.jpg",
+      "title": "Auricular Beat",
+      "price": 5700, 
+      "description":"Auricular ideal para gamers",
+      "stock": 10
+    },
+
+    { "id": 2, 
+      "type": "Computer", 
+      "image": "../../src/assets/img2.jpg", 
+      "title": "Camara Logitech",
+      "price": 3800,
+      "description": "Camara de alta resolución para computadoras de hogar",
+      "stock": 7
+    },
+
+    { "id": 3, 
+      "type": "Gamer", 
+      "image":"../../src/assets/img3.jpg",
+      "title": "Procesador CoreI5",
+      "price": 35000, 
+      "description": "Procesador para tu pc de juego",
+      "stock": 5 
+    },  
+
+    { "id": 4, 
+      "type": "Gamer",
+      "image":"../../src/assets/img4.jpg",
+      "title": "Auricular Sony", 
+      "price": 6800, 
+      "description": "Auricular ideal para tus juegos",
+      "stock": 10
+    },
+
+    { "id": 5, 
+      "type": "Computer", 
+      "image":"../../src/assets/img5.jpg",
+      "title":"Auricular Sony",
+      "price": 6500, 
+      "description": "Auricular para disfrutar de toda tu musica",
+      "stock":10
+    },
+
+    { "id": 6, 
+      "type":"Computer",
+      "image":"../../src/assets/img6.jpg",
+      "title": "Camara Logitech", 
+      "price": 4100, 
+      "description": "Camara para pc de hogar",
+      "stock":5
+    }
+
+  ]

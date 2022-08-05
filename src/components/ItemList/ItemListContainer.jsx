@@ -5,7 +5,7 @@ import ItemList from './ItemList'
 
 export default function ItemListContainer() {
     const [productos, setProductos] = useState([]);
-
+   
     const { idCategory } = useParams();
 
     useEffect(() => {
@@ -34,6 +34,6 @@ export default function ItemListContainer() {
 
     },[idCategory]);
 
-  return <ItemList productos={productos}/>; 
+  return <ItemList productos={productos} />; 
 }
 

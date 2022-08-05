@@ -73,7 +73,7 @@ ion-icon {
 }
 
 .products-heading {
-  font-size: 8rem;
+  font-size: 2rem;
   padding: 80px 20px;
   color: black;
 }
@@ -84,7 +84,7 @@ ion-icon {
   border: none;
   padding: 4px 9px;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 100;
   cursor: pointer;
   border: 1px solid;
 }
@@ -105,7 +105,7 @@ ion-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  
   
 }
 

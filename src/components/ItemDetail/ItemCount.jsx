@@ -15,7 +15,7 @@ export default function ItemCount() {
     return (
         <div className='container'>
           <div className='product-box'>
-             <h2>Item count</h2>
+             
 
              <button disabled={numero === 0} onClick={handleDecrement}>-</button>
              <h3>{numero}</h3>

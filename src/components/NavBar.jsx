@@ -15,7 +15,8 @@ export default function NavBar () {
         </ul>
         <div>
         
-           <ion-icon className="cart-icon"  name="cart-outline"></ion-icon>
+        <ion-icon className="cart-icon"  name="cart-outline"></ion-icon>
+       
         </div>
       </nav>
     
