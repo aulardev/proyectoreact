@@ -1,32 +1,23 @@
 import React from 'react'
-import { useState } from 'react'
+import ItemCount from './ItemCount'
 
-export default function ItemDetail({ producto }) {
-  
-  const ItemDetail = ({producto, onclick}) => {
-    const [stock, setStock] =useState(20)
-    const [cantidad, serCantidad] =useState(1)
 
-    const cambiarStock = () => {
-      const number = Number(cantidad)
-      setStock(stock - cantidad)
-      onclick(number)
-      setCantidad(0)
-    }
-    const bajarCantidad = () => {
-      if (Cantidad > 0) {
-        setCantidad(cantidad - 1)
-      }
-    }
-
-  }
-
+const ItemDetail = ({producto}) => {
   return (
-    <>
-    <div className='item-product'>
-        
+    <div className=''>
+      <div className=''>
+        <div>
+            <img src={producto.image} alt="" className=''/>
         </div>
-
-    </>
+        <div className=''>
+            <div className=''>{producto.title}</div>
+            <div className=''>{producto.description}</div>
+            <div className=''>${producto.price}</div>
+            <ItemCount stock={producto.stock} />
+        </div>
+      </div>
+    </div>
   )
 }
+
+export default ItemDetail

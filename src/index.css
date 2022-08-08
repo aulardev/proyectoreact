@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;500;600&family=Raleway:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #fd4646;
+    --text-color: #171427; 
+    --bg-color: #fff;
+} 
+
+.App {
+    max-width: 1550px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    box-sizing: 0 2px 6px #08a05ca4;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/*----------NAV BAR---------*/
+
+.nav {
+   width: 97%; 
+   min-height: 100px;
+   max-width: 1530px;
+   overflow: hidden;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   position: fixed;
+   box-sizing: border-box;
+   background-color: white;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.nav__menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+/* --- CART ---- */
+
+ion-icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.9rem;
+    cursor: pointer;
+    
+  }
+
+nav .cart {
+    position: relative;
+    cursor: pointer;
+}
+
+nav .cart span {
+    position: absolute;
+    top: -1rem;
+    right: -1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: crimson;
+
+}
+
+
+.counter {
+    background: var(--main-color);
+    color: white;
+    border: none;
+    padding: 4px 9px;
+    font-size: 1.5rem;
+    font-weight: 100;
+    cursor: pointer;
+    border: 1px solid;
+  }
+
+  .counter-box {
+    width: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  
+  .item-product {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    
+  }
+
+  .img-product {
+   
+   object-fit: contain;
+   padding: 10px; 
+  }
+
+  .title {
+    font-size: 1rem;
+  }

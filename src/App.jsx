@@ -6,13 +6,15 @@ import ItemListContainer from './components/ItemList/ItemListContainer';
 import NavBar from './components/NavBar';
 
 
+
 function App() {
 
 return (
   <>
   <BrowserRouter>
   <NavBar/>
-  <ItemCount/>
+  
+  
         <Routes>
           <Route path="/" element={<ItemListContainer/>} />
           <Route path="/category/:idCategory" element={<ItemListContainer/>} />
