@@ -9,7 +9,7 @@ import Productos from '../../data/products.json'
 const ItemDetailContainer = () => {
 
   const {productId} = useParams(); 
-  const [producto, setProducto] = useState([]);
+  const [producto, setProducto] = useState({});
   
 
   useEffect(() => {
