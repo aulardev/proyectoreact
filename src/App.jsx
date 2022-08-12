@@ -9,21 +9,23 @@ import NavBar from './components/NavBar';
 function App() {
 
 return (
-  <>
+  <div className='container'>
   <BrowserRouter>
   <NavBar/>
   
-  
+    
         <Routes>
-          <Route path="/" element={<ItemListContainer/>} />
-          <Route path="/category/:productType" element={<ItemListContainer/>} />
-          <Route path="/item/:idProducto" element={<ItemDetailContainer/>} />
-          <Route path="*" element={<p>Error 404</p>} />
+          
+            <Route path="/" element={<ItemListContainer/>} />
+            <Route path="/category/:productType" element={<ItemListContainer/>} />
+            <Route path="/item/:idProducto" element={<ItemDetailContainer/>} />
+            <Route path="*" element={<p>Error 404</p>} />
+          
         </Routes>
       </BrowserRouter>
 
+      </div>
   
-  </>
 
 );
 

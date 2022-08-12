@@ -14,17 +14,14 @@ export default function ItemCount() {
 
     return (
         <div className='container'>
-          <div className='product-box'>
-             
-
+          <div className='count'>
              <button disabled={numero === 0} onClick={handleDecrement}>-</button>
              <h3>{numero}</h3>
-
              <button disabled={numero === 5} onClick={handleIncrement}>+</button>
-
-             <button className="counter" >Add Cart</button>
           </div>
+          <button className="btn-add" >Add Cart</button>
        </div>
+       
   )
 } 
 
