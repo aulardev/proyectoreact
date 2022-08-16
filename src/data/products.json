@@ -9,25 +9,25 @@
     },
 
     { "id": 2, 
-      "type": "Computer", 
+      "type": "computacion", 
       "image": "../../src/assets/img2.jpg", 
       "title": "Camara Logitech",
       "price": 3800,
-      "description": "Camara de alta resolución para computadoras de hogar",
+      "description": "Camara de alta resolución",
       "stock": 7
     },
 
     { "id": 3, 
-      "type": "Gamer", 
+      "type": "gamer", 
       "image":"../../src/assets/img3.jpg",
       "title": "Procesador CoreI5",
       "price": 35000, 
-      "description": "Procesador para tu pc de juego",
+      "description": "Procesador INTEL I5 para tu pc de juego",
       "stock": 5 
     },  
 
     { "id": 4, 
-      "type": "Gamer",
+      "type": "gamer",
       "image":"../../src/assets/img4.jpg",
       "title": "Auricular Sony", 
       "price": 6800, 
@@ -36,20 +36,20 @@
     },
 
     { "id": 5, 
-      "type": "Computer", 
+      "type": "computacion", 
       "image":"../../src/assets/img5.jpg",
-      "title":"Auricular Sony",
+      "title":"PC Armada",
       "price": 6500, 
-      "description": "Auricular para disfrutar de toda tu musica",
+      "description": "Con los mejores componentes",
       "stock":10
     },
 
     { "id": 6, 
-      "type":"Computer",
+      "type":"computacion",
       "image":"../../src/assets/img6.jpg",
-      "title": "Camara Logitech", 
+      "title": "Teclado Logitech", 
       "price": 4100, 
-      "description": "Camara para pc de hogar",
+      "description": "lorem ipsum lorem ipsum",
       "stock":5
     }
 

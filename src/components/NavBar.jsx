@@ -13,12 +13,13 @@ export default function NavBar () {
         
         <ul>
           <li><Link to={'/'} >Home</Link></li>
+          <li><Link to={'/'} >Products</Link></li>
           <li><Link to="/category/gamer">Gamer</Link></li>
           <li><Link to="/category/computacion">Computación</Link></li>
         </ul>
 
         <div className='cart'>
-          <ion-icon className="cart-icon"  name="cart-outline"></ion-icon>
+        <Link to="/cart"> <ion-icon className="cart-icon"  name="cart-outline"></ion-icon> </Link> 
           <span className='item__total'>0</span>
         </div>
 
