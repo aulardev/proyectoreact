@@ -1,6 +1,12 @@
 import React from 'react'
+import { useState } from 'react';
 import { Link } from 'react-router-dom'
-export default function NavBar () {
+import CartWidget from './CartWidget';
+
+const NavBar = () => {
+
+  const [nav, setNav] = useState(false)
+  const handleClick = () => setNav(!nav)
 
 
   return (
@@ -12,14 +18,14 @@ export default function NavBar () {
         </div>
         
         <ul>
-          <li><Link to={'/'} >Home</Link></li>
-          <li><Link to={'/'} >Products</Link></li>
-          <li><Link to="/category/gamer">Gamer</Link></li>
-          <li><Link to="/category/computacion">Computación</Link></li>
+          <li><Link to={'/'} onClick={handleClick}>Home</Link></li>
+          <li><Link to={'/'} onClick={handleClick}>Products</Link></li>
+          <li><Link to="/category/gamer" onClick={handleClick}>Gamer</Link></li>
+          <li><Link to="/category/computacion" onClick={handleClick}>Computación</Link></li>
         </ul>
 
         <div className='cart'>
-        <Link to="/cart"> <ion-icon className="cart-icon"  name="cart-outline"></ion-icon> </Link> 
+        <Link to="/cart" onClick={handleClick}> <CartWidget className="cart-icon"  name="cart-outline" /> </Link> 
           <span className='item__total'>0</span>
         </div>
 
@@ -28,4 +34,6 @@ export default function NavBar () {
     </header>
   )
 }
+
+export default NavBar
 

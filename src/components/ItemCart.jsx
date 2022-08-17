@@ -10,7 +10,7 @@ const ItemCart = ({product}) => {
         <div className='item-card'>
             <img src={product.image} alt={product.title} className=''/>
         </div>
-        <div className='flex items-center'>
+        <div className=''>
             <p>{product.title}</p>
             <p>{product.quantity}</p>
             <p>${product.price}</p>
