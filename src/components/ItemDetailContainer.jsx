@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Productos from '../data/products.json';
+import ItemDetail from './ItemDetail';
 
 
 export default function ItemDetailContainer() {
@@ -18,5 +19,5 @@ export default function ItemDetailContainer() {
         getItem.then(res => setProduct(res.find(productD => productD.id === parseInt(productId))));
       }, [])
 
-  return <>{JSON.stringify(product)}</> 
+  return <ItemDetail product={(product)}/> 
 }
