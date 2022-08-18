@@ -3,11 +3,24 @@ import React from 'react'
 
 export default function ItemDetail ({product}) {
  // "id":1,"type":"gamer","image":"../../src/assets/img1.jpg","title":"Auricular Beat","price":5700,"description":"Auricular ideal para gamers","stock":10
-  return <div className='products-container'> 
-            <img src={product.image} className='img-card'/>
-            <h2 className='title'>{product.title}</h2>
-            <p>{product.description}</p>
-            <p className='price'>${product.price}</p>
-            <button className="btn-add"  >Add to Cart</button>
+  return <div className='flex-box'> 
+                <div className='left'> 
+                    <div> 
+                     <img src={product.image}  className='big-img'/>
+                     </div>
+                </div>
+
+                <div className='right'>
+                  <div className='info-product'>
+                     <h2 className='pname'>{product.title}</h2>
+                     <p className='pprice'>${product.price}</p>
+                     <p>{product.description}</p> 
+                     
+                  </div>
+                  <div className='btn-box'>
+                     <button className='cart-btn'>Add to Cart</button>
+                     <button className='buy-btn'>Buy Now</button>
+                  </div>
+              </div>       
         </div>;
 }

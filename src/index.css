@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;500;600&family=Raleway:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap');
 
-*{
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
 :root {
     --main-color: #fd4646;
@@ -175,3 +170,64 @@ p {
   cursor: pointer;
 }
  
+
+/* PRODUCT DETAIL */
+
+.flex-box {
+  display: flex;
+  width: 1000px;
+  margin: 20px auto;
+  background: whitesmoke;
+}
+
+.left {
+  width: 50%;
+}
+
+.big-img {
+  width: 400px;
+}
+
+.pname {
+  font-size: 45px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.pprice {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px 0;
+}
+
+.btn-box {
+  display: flex;
+  margin: 20px 0;
+} 
+
+.cart-btn {
+  font-size: 18px;
+  padding: 8px 25px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #00aeff;
+  margin-right: 15px;
+  color: white;
+}
+
+.buy-btn {
+  font-size: 18px;
+  padding: 8px 25px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 20px;
+  background-color: var(--main-color);
+  color: white;
+}
+
+
+
