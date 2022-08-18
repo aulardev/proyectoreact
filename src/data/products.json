@@ -4,7 +4,7 @@
       "image": "../../src/assets/img1.jpg",
       "title": "Auricular Beat",
       "price": 5700, 
-      "description":"Auricular ideal para gamers",
+      "description":"22 horas de batería, que brindan una reproducción inalámbrica completa",
       "stock": 10
     },
 
@@ -13,7 +13,7 @@
       "image": "../../src/assets/img2.jpg", 
       "title": "Camara Logitech",
       "price": 3800,
-      "description": "Camara de alta resolución",
+      "description": "Resolución máxima de video: 1920px x 1080px, resolución de 3Mpx",
       "stock": 7
     },
 
@@ -22,7 +22,7 @@
       "image":"../../src/assets/img3.jpg",
       "title": "Procesador CoreI5",
       "price": 35000, 
-      "description": "Procesador INTEL I5 para tu pc de juego",
+      "description": "Microprocesador Core I5 10400F 10TH 4.3GHZ (1200)",
       "stock": 5 
     },  
 
@@ -31,16 +31,16 @@
       "image":"../../src/assets/img4.jpg",
       "title": "Auricular Sony", 
       "price": 6800, 
-      "description": "Auricular ideal para tus juegos",
+      "description": "On-ear con una versión de bluetooth 5.0  ",
       "stock": 10
     },
 
     { "id": 5, 
       "type": "computacion", 
       "image":"../../src/assets/img5.jpg",
-      "title":"PC Armada",
+      "title":"PC Gamer",
       "price": 6500, 
-      "description": "Con los mejores componentes",
+      "description": "Core I7 2600, 16 gb memoria ram y disco de 1 tb",
       "stock":10
     },
 
@@ -49,7 +49,7 @@
       "image":"../../src/assets/img6.jpg",
       "title": "Teclado Logitech", 
       "price": 4100, 
-      "description": "lorem ipsum lorem ipsum",
+      "description": "Tipo de conexión  Bluetooth Classic, radio de acción inalámbrico 10 m1 1",
       "stock":5
     }
 

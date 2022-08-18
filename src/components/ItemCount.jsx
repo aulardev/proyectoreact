@@ -1,36 +1,31 @@
-import React, { useEffect, useState } from 'react';
-import Item from './Item';
+import React, { useState } from 'react';
 
-const ItemCount = ({stock, onAdd}) => {
-
+   
+  
+export default function ItemCount({product}) {
     const [count, setCount] = useState(1);
-
-    function handleClickMas(){
-        if (count < stock){
-            setCount(count + 1);
-        }
+    function sum(){
+        if (count < product.stock)
+      setCount(count+1);
     }
 
-    function handleClickMenos(){
-        if(count > 1){
-            setCount(count -1)
-        }
+    function res(){
+        if (count > 1) {
+        setCount(count-1);
+    }
+    }
+    function onAdd(){
+        alert('Quiero agregar' + count + 'de este procucto' + JSON.stringify(product))
     }
 
-    useEffect(() => {
-        
-    }, [count])
+  return (
+    <div>
+        <span style={{ cursor: "pointer"}} onClick={sum}>+</span>
+        {count}
+        <span style={{ cursor: "pointer"}} onClick={res}>-</span>
+        <button onClick={onAdd} className='cart-btn'>Add to Cart</button>
+    </div>
+  )
+}
 
-    return (
-        <div>
-            <div className=''>
-                <div className='' onClick={handleClickMenos}><Item/></div>
-                <div className='' >{count}</div>
-                <div className='' onClick={handleClickMas}><Item/></div>
-            </div>
-            <button className='' onClick={() => onAdd(count)}>Agregar al Carrito</button>        </div>
-    )
-} 
-
-export default ItemCount
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import ItemCount from './ItemCount';
 
 
 export default function ItemDetail ({product}) {
@@ -18,8 +19,8 @@ export default function ItemDetail ({product}) {
                      
                   </div>
                   <div className='btn-box'>
-                     <button className='cart-btn'>Add to Cart</button>
                      <button className='buy-btn'>Buy Now</button>
+                     <ItemCount product={product}/>
                   </div>
               </div>       
         </div>;
