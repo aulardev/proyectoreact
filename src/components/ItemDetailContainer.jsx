@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Productos from '../data/products.json';
 import ItemDetail from './ItemDetail';
+import { useCartContext } from '../context/CartContext';
 
 
 export default function ItemDetailContainer() {

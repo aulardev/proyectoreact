@@ -1,12 +1,11 @@
 import React from 'react'
-import { useCartContext } from '../context/CartContext'
 import ItemCart from './ItemCart';
 
 const Cart = () => {
-  const {cart, totalPrice} = useCartContext();
+  
 
 
-  if (cart.length === 0){
+  if (Cart.length === 0){
     return (
       <div className='container'>
         <p className='title'>No hay elementos en el carrito</p>
@@ -23,7 +22,7 @@ const Cart = () => {
         <p className='title'>Subtotal</p>
       </div>
       {
-        cart.map(product => <ItemCart key={product.id} product={product}/>)
+        Cart.map(producto => <ItemCart key={producto.id} producto={producto}/>)
       }
       <p className='price'>Total: ${totalPrice()}</p>
     </div>

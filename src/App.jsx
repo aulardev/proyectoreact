@@ -4,17 +4,20 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer';
 import NavBar from './components/NavBar';
 import Cart from './components/Cart';
-import CartProvider from './context/CartContext';
 import CheckOut from './components/CheckOut'; 
+import React from 'react';
+import CartProvider from './context/CartContext';
 
 
 
 function App() {
 
 return (
-  <div className='container'>
+  <>
     <BrowserRouter>
-    <CartProvider>
+    
+      
+      <CartProvider>
       <NavBar/>
         <Routes>
           
@@ -26,9 +29,9 @@ return (
             <Route path="*" element={<p>Error 404</p>} />
           
         </Routes>
-      </CartProvider>
+        </CartProvider>
    </BrowserRouter>
- </div>
+ </>
   
 
 );

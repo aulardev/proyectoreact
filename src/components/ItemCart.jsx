@@ -1,9 +1,9 @@
 import React from 'react';
-import { useCartContext } from '../context/CartContext';
+
 
 
 const ItemCart = ({product}) => {
-    const {removeItem} = useCartContext();
+    
 
   return (
     <div className=''>

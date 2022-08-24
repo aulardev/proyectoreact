@@ -27,4 +27,3 @@ export default function ItemListContainer() {
 
   return <ItemList products={products} />; 
 }
-

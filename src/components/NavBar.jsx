@@ -25,7 +25,8 @@ const NavBar = () => {
         </ul>
 
         <div className='cart'>
-        <Link to="/cart" onClick={handleClick}> <CartWidget className="cart-icon"  name="cart-outline" /> </Link> 
+        <Link to="/cart" onClick={handleClick}></Link> 
+        <CartWidget className="cart-icon"  name="cart-outline" /> 
           <span className='item__total'>0</span>
         </div>
 
