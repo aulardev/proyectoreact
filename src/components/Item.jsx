@@ -7,14 +7,14 @@ export default function Item({ producto }) {
         <div className='products-container'>
             <div className='item-card'>
                 <div>
-                    <Link to={`/product/${producto.id}`}><img src={producto.image} className='img-card' /></Link>
+                    <Link to={`/product/${producto.id}`}><img src={producto.img} className='img-card' /></Link>
 
                 </div>
                 <div className='header-card'>
                     <h2 className='title'>{producto.name}</h2>
                     <p>{producto.description}</p>
                     <p className='price'>${producto.price}</p>
-                    <p>{producto.stock}</p>
+                    <p>Disponibles: {producto.stock}</p>
 
                     <Link to={`/product/${producto.id}`}><button className='btn-add'>Ver Detalles</button></Link>
 
