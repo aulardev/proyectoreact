@@ -2,8 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 
-
-
 export default function Item({ producto }) {
     return (
         <div className='products-container'>
@@ -13,9 +11,10 @@ export default function Item({ producto }) {
 
                 </div>
                 <div className='header-card'>
-                    <h2 className='title'>{producto.title}</h2>
+                    <h2 className='title'>{producto.name}</h2>
                     <p>{producto.description}</p>
                     <p className='price'>${producto.price}</p>
+                    <p>{producto.stock}</p>
 
                     <Link to={`/product/${producto.id}`}><button className='btn-add'>Ver Detalles</button></Link>
 

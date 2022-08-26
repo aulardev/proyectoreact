@@ -6,23 +6,23 @@ import Products from '../data/products.json'
 
 
 export default function ItemListContainer() {
+
+  const [products, setProducts] = useState([]);
   useEffect(()  => {
      const db = getFirestore();
      const miCollection = collection(db, "products");
 
      getDocs(miCollection).then((data) => {
-      console.log(data.docs[0].data());
-      console.log(data.docs[0].id);
-      console.log({ ...data.docs[0].data(), id: data.docs[0].id});
-
       const auxProducts = data.docs.map(product => ({ 
         ...product.data(), 
         id: product.id, 
      }));
+
+     setProducts(auxProducts);
   });
   },[]);
 
-  return <div>list container</div>
+  return <ItemList products={products}/>
 }
     
 
