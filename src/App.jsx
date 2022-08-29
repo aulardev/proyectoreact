@@ -6,31 +6,29 @@ import NavBar from './components/NavBar';
 import Cart from './components/Cart';
 import CheckOut from './components/CheckOut'; 
 import React from 'react';
-import CartProvider from './context/CartContext';
-
+import CartProvider from './context/CartProvider';
 
 
 function App() {
 
 return (
   <>
+    <CartProvider>
     <BrowserRouter>
     
-      
-      <CartProvider>
       <NavBar/>
         <Routes>
           
             <Route path="/" element={<ItemListContainer/>} />
-            <Route path="/category/:productType" element={<ItemListContainer/>} />
-            <Route path="/product/:productId" element={<ItemDetailContainer/>} />
+            <Route path="/category/:idcategory" element={<ItemListContainer/>} />
+            <Route path="/item/:idItem" element={<ItemDetailContainer/>} />
             <Route path='/cart' element={<Cart />} />
             <Route path='/checkout' element={<CheckOut/>}/>
             <Route path="*" element={<p>Error 404</p>} />
           
-        </Routes>
-        </CartProvider>
+        </Routes>      
    </BrowserRouter>
+   </CartProvider> 
  </>
   
 

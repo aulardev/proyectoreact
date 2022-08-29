@@ -1,36 +1,28 @@
-import React, { useState } from 'react'
-import { useCartContext } from '../context/CartContext';
-import ItemCount from './ItemCount';
-import { Link } from 'react-router-dom'
+import React from 'react';
 
 
 export default function ItemDetail({ product }) {
-   const [goToCart, setGoToCart] = useState(false)
-   const { addProduct } = useCartContext();
+   
+   return ( 
+      <div className='flex-box'>
+        <div className='left'>
+            <div>
+               <img src={product.img} className='big-img' />
+            </div>
+        </div>
 
-   const onAdd = (quantity) => {
-      setGoToCart(true)
-      addProduct(product, quantity)
-   }
+        <div className='right'>
+           <div className='info-product'>
+             <h2 className='pname'>{product.name}</h2>
+             <p> {product.description}</p>
+             <br />
+             <p className='pprice'>Precio: ${product.price}</p>
+             <p>Disponibles: {product.stock}</p>
+          </div>
 
-   return <div className='flex-box'>
-      <div className='left'>
-         <div>
-            <img src={product.image} className='big-img' />
-         </div>
-      </div>
-
-      <div className='right'>
-         <div className='info-product'>
-            <h2 className='pname'>{product.title}</h2>
-            <p className='pprice'>${product.price}</p>
-            <p>{product.description}</p>
-
-         </div>
-         <div className='btn-box'>
-         <button onClick={onAdd} className='buy-btn'>Buy Now</button>
-            <ItemCount product={product} />
-         </div>
-      </div>
-   </div>;
+           <div className='btn-box'>
+              <button className='buy-btn'>Add to Cart</button>
+           </div>
+       </div>
+    </div>);
 }
