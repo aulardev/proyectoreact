@@ -6,14 +6,14 @@ import NavBar from './components/NavBar';
 import Cart from './components/Cart';
 import CheckOut from './components/CheckOut'; 
 import React from 'react';
-import CartProvider from './context/CartProvider';
+import CartComponent from './context/CartComponent';
 
 
 function App() {
 
 return (
   <>
-    <CartProvider>
+    <CartComponent>
     <BrowserRouter>
     
       <NavBar/>
@@ -28,7 +28,7 @@ return (
           
         </Routes>      
    </BrowserRouter>
-   </CartProvider> 
+   </CartComponent> 
  </>
   
 
