@@ -228,7 +228,7 @@ p {
   border-radius: 6px;
   cursor: pointer;
   background-color: #00aeff;
-  margin-top: 35px;
+  margin-top: 30px;
   margin-right: 15px;
   color: white;
   margin-left: 35%;
@@ -247,15 +247,6 @@ p {
   
 }
 
-.count-box {
-  width: 55px;
-  height: 45px;
-  margin-top: 15px;
-  margin-bottom: 45px;
-  margin: auto;
-  background: white;
-}
-
 button {
   margin: 12px 5px;
   padding: auto;
@@ -264,4 +255,15 @@ button {
 span {
   padding: 1px 1px;
 }
+
+.count-box {
+  width: 45px;
+  height: 45px;
+  margin-top: 55px;
+  margin-bottom: 15px;
+  margin: auto;
+  background: white;
+  cursor: pointer;
+}
+
 

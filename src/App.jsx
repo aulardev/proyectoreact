@@ -9,6 +9,7 @@ import React from 'react';
 import CartComponent from './context/CartComponent';
 
 
+
 function App() {
 
 return (
@@ -25,7 +26,7 @@ return (
             <Route path='/cart' element={<Cart />} />
             <Route path='/checkout' element={<CheckOut/>}/>
             <Route path="*" element={<p>Error 404</p>} />
-          
+            
         </Routes>      
    </BrowserRouter>
    </CartComponent> 

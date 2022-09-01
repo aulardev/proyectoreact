@@ -1,17 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { cartContext } from '../context/CartComponent'
+
+export default function CartWidget() {
+  const {cart, totalCount} = useContext(cartContext)
 
 
-const CartWidget = () => {
   
   return (
     <div>
+      <div>
+      <span>{totalCount}</span>
+      </div>
       <Link to='/cart'>
         <ion-icon className="cart-icon" name="cart-outline"></ion-icon>
      </Link>
      
     </div>
   )
-}
+  }
 
-export default CartWidget

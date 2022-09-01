@@ -14,7 +14,7 @@ const NavBar = () => {
 
       <nav className="nav">
         <div className="nav__brand">
-           <h1><Link to={'/'} >Technology Shop</Link></h1>
+           <h1><Link to={'/'} >PC Tech Shop</Link></h1>
         </div>
         
         <ul>
@@ -27,7 +27,7 @@ const NavBar = () => {
         <div className='cart'>
         <Link to="/cart" onClick={handleClick}></Link> 
         <CartWidget className="cart-icon"  name="cart-outline" /> 
-          <span className='item__total'>0</span>
+          
         </div>
 
       </nav>
