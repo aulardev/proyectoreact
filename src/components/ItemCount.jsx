@@ -41,6 +41,7 @@ export default function ItemCount({product}) {
             <>
             "Producto agregado.."
             <Link to="/"> <button onClick={onAdd} className='cart-btn'>Seguir comprando</button> </Link>
+            <Link to="/checkout"> <button onClick={onAdd} className='cart-btn'>Terminar compra</button></Link>
             </>
           ) : (
             <button onClick={onAdd} className='cart-btn'>Add to Cart</button>

@@ -71,8 +71,8 @@ nav .cart span {
     position: absolute;
     top: -1rem;
     right: -1.5rem;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.0rem;
+    height: 2.0rem;
     border: 1px solid red;
     border-radius: 50%;
     display: flex;
@@ -81,7 +81,7 @@ nav .cart span {
     color: white;
     padding: 0rem;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 400;
     background-color: crimson;
 
 }

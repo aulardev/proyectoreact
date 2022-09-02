@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { cartContext } from '../context/CartComponent'
 
 export default function CartWidget() {
-  const {cart, totalCount} = useContext(cartContext)
+  const { totalCount } = useContext(cartContext)
 
 
   
