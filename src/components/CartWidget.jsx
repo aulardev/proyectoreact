@@ -6,17 +6,17 @@ export default function CartWidget() {
   const { totalCount } = useContext(cartContext)
 
 
-  
+
   return (
     <div>
       <div>
-      <span>{totalCount}</span>
+        <span>{totalCount}</span>
       </div>
       <Link to='/cart'>
         <ion-icon className="cart-icon" name="cart-outline"></ion-icon>
-     </Link>
-     
+      </Link>
+
     </div>
   )
-  }
+}
 

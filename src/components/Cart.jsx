@@ -4,27 +4,36 @@ import { Link } from 'react-router-dom';
 import { cartContext } from '../context/CartComponent';
 
 export default function Cart() {
-  const { cart, totalCount, totalToPay, deleteFromCart } = 
-  useContext(cartContext);
+  const { cart, totalCount, totalToPay, deleteFromCart } =
+    useContext(cartContext);
   return (
-  <>
-    {cart.map((item) => (
-         <div key={item.id}> 
-           {item.name + " " + item.count}{" "} 
-           <span onClick={()=> deleteFromCart(item.id)}>🗑️</span>
-         </div>
-    ))}
+    <>
+      <h2>CHEQUEA TU COMPRA</h2>
+      <div className='flex-box'>
 
-    <div> 
-      Tienes en el carro: {totalCount} a pagar: {totalToPay} 
-    </div>
-    
-    <Link to="/checkout">Finalizar tu compra!</Link>
- </>
+        {cart.map((item) => (
+          <div key={item.id}>
+            {item.name + " " + item.count}{" "}
+            <span onClick={() => deleteFromCart(item.id)}> 🗑️ Eliminar producto</span>
+          </div>
+        ))}
+
+      </div>
+
+      <div className='flex-box'>
+        Unidades: {totalCount}
+      </div>
+      <div className='flex-box'>
+        Total a pagar: ${totalToPay}
+      </div>
+
+      <div className='final-btn'>
+        <Link to="/checkout">  Finalizar la compra!</Link>
+      </div>
+    </>
   )
 };
-  
- 
 
-  
-  
+
+
+

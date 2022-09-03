@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { 
-  collection, 
-  getDocs, 
+import {
+  collection,
+  getDocs,
   getFirestore,
   query,
   where,
@@ -14,52 +14,33 @@ import Products from '../data/products.json'
 export default function ItemListContainer() {
 
   const [products, setProducts] = useState([]);
-  const {idcategory} = useParams();
-  
-  useEffect(()  => {
-     const db = getFirestore();
-     let miCollection;
-     
-    //si estoy en home o ruta sin params de categoria definidos
-     if (idcategory == undefined){ 
-      miCollection = collection(db, "products");
-      
-} else {
-  miCollection = query(
-    collection(db, "products"), 
-    where("idcategory", "==", idcategory)
-  );
-}
+  const { idcategory } = useParams();
 
-  getDocs(miCollection).then((data) => {
-    const auxProducts = data.docs.map((product) => ({ 
-      ...product.data(), 
-      id: product.id, 
-   }));
+  useEffect(() => {
+    const db = getFirestore();
+    let miCollection;
 
-   setProducts(auxProducts);
-});
-},[idcategory]);  
-
-  return <ItemList products={products}/>
-}
     
+    if (idcategory == undefined) {
+      miCollection = collection(db, "products");
 
+    } else {
+      miCollection = query(
+        collection(db, "products"),
+        where("idcategory", "==", idcategory)
+      );
+    }
 
+    getDocs(miCollection).then((data) => {
+      const auxProducts = data.docs.map((product) => ({
+        ...product.data(),
+        id: product.id,
+      }));
 
+      setProducts(auxProducts);
+    });
+  }, [idcategory]);
 
- /* const miPromesa = new Promise ((res, rej) => {
-    setTimeout(() => {
-      if (!productType) res(Products);
-      else res(Products.filter(product => product.type.includes (productType)))
-    }, 2000);
-  })
-  
-  miPromesa.then((res) => {
-    setProducts(res);
-  });
+  return <ItemList products={products} />
+}
 
-    },[productType]);
-
-  return <ItemList products={products} />; 
-}*/

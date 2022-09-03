@@ -16,7 +16,7 @@ export default function Item({ product }) {
                     <p className='price'>${product.price}</p>
                     <p>Disponibles: {product.stock}</p>
 
-                    <Link to={'/item/' + product.id }><button className='btn-add'>Ver Detalles</button></Link>
+                    <Link to={'/item/' + product.id}><button className='btn-add'>Ver Detalles</button></Link>
 
                 </div>
 

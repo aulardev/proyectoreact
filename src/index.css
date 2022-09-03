@@ -212,8 +212,6 @@ p {
   margin: 20px 0px;
 } 
 
-
-
 .quantity {
   display: inline-block;
   margin: 20px 40px;
@@ -247,6 +245,16 @@ p {
   
 }
 
+.final-btn {
+  font-size: 18px;
+  padding: 8px 21px;
+  margin: 10px 650px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #00aeff;
+}
+
 button {
   margin: 12px 5px;
   padding: auto;
@@ -254,6 +262,7 @@ button {
 
 span {
   padding: 1px 1px;
+  cursor: pointer;
 }
 
 .count-box {
@@ -264,6 +273,11 @@ span {
   margin: auto;
   background: white;
   cursor: pointer;
+}
+
+input {
+  padding: 5px 5px;
+  margin: 5px 270px;
 }
 
 

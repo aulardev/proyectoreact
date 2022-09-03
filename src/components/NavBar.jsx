@@ -14,9 +14,9 @@ const NavBar = () => {
 
       <nav className="nav">
         <div className="nav__brand">
-           <h1><Link to={'/'} >PC Tech Shop</Link></h1>
+          <h1><Link to={'/'} >PC Tech Shop</Link></h1>
         </div>
-        
+
         <ul>
           <li><Link to={'/'} onClick={handleClick}>Home</Link></li>
           <li><Link to={'/'} onClick={handleClick}>Products</Link></li>
@@ -25,13 +25,13 @@ const NavBar = () => {
         </ul>
 
         <div className='cart'>
-        <Link to="/cart" onClick={handleClick}></Link> 
-        <CartWidget className="cart-icon"  name="cart-outline" /> 
-          
+          <Link to="/cart" onClick={handleClick}></Link>
+          <CartWidget className="cart-icon" name="cart-outline" />
+
         </div>
 
       </nav>
-    
+
     </header>
   )
 }
