@@ -30,6 +30,10 @@ export default function CartComponent ({children}) {
     setCart(cart.filter(item=> item.id != id));
   }
 
+  function deleteAllFromCart(){
+    setCart([]);
+  }
+
   useEffect(()=>{
     setTotalCount(cart.reduce((acc, item) => acc + item.count, 0));
     setTotalToPay(cart.reduce((acc, item) => acc + item.count * item.price, 0));
@@ -37,7 +41,15 @@ export default function CartComponent ({children}) {
 
  
   return (
-    <cartContext.Provider value={{ cart, addToCart, totalCount, totalToPay, deleteFromCart }}> 
+    <cartContext.Provider value={{ 
+      cart, 
+      addToCart, 
+      totalCount, 
+      totalToPay, 
+      deleteFromCart, 
+      deleteAllFromCart, 
+      }}
+      > 
       {children}
     </cartContext.Provider>
   );

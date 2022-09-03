@@ -10,7 +10,7 @@ export default function ItemCount({product}) {
     const {cart, addToCart}  = useContext(cartContext);
     
     function sum(){
-        if (count < product.stock){
+        if (count <= product.stock){
       setCount(count +1 );
     }
   }
